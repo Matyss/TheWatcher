@@ -11,7 +11,7 @@
 		margin-top: 50px;
 		width: 100%;
 		height: 50px;
-		background-color: #f5f5f5;
+		background-color: #1c313a;
 		bottom: 0;
 	}
 	.text-muted {

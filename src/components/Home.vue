@@ -1,7 +1,7 @@
 <template>
   <div class='container'>
       <div class='row'>
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-6 col-sm-6">
       		<h2>Our most recent movies to see:</h2>
               <transition name='appear' mode='out-in'>
                 <app-message-info v-show="showInfo"></app-message-info>

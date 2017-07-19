@@ -37,10 +37,17 @@
 }
 
 .my-btn {
-
+	background-color: #02d143;
+	border: none;
+	border-radius: 0px;
+	padding: 8px 16px;
 	border: none;
 	text-transform: uppercase;
 	padding: 15px 25px;
+}
+
+.my-btn:hover {
+	background-color: #0092Ca;
 }
 
 button:focus {

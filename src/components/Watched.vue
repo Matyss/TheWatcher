@@ -70,6 +70,17 @@ export default {
 </script>
 
 <style scoped>
+
+@media(max-width: 768px) {
+  li:hover img{
+    transform: scale(2.0) !important;
+  }
+}
+
+.container {
+  font-family: 'Lato', sans-serif
+}
+
 img {
 	height: 40px;
 	width: auto;
@@ -123,13 +134,21 @@ li:hover span {
 }
 
 .button--delete {
-	background-color: #ff4444;
+	background-color: #e50000;
 }
 
 .button--restore {
-	background-color: #ffbb33;
+	background-color: #ffa000;
 	 margin-left: -5px;
 	 margin-right: 15px;
+}
+
+.button--delete:hover {
+  background-color: #bf0000;
+}
+
+.button--restore:hover {
+  background-color: #dd8c02;
 }
 
 /*   Animation for messages   */

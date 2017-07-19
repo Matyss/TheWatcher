@@ -13,6 +13,7 @@
 		height: 50px;
 		background-color: #1c313a;
 		bottom: 0;
+		font-family: 'Lato', sans-serif
 	}
 	.text-muted {
 		padding-top: 15px;

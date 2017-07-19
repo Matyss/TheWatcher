@@ -56,6 +56,30 @@ export default {
 
 <style scoped>
 
+
+
+	.btn-success {
+		background-color: #02d143;
+		border: none;
+		border-radius: 0px;
+		padding: 8px 16px;
+	}
+
+	.btn-info {
+		background-color: #03a9f4;
+		border: none;
+		border-radius: 0px;
+		padding: 8px 16px;
+	}
+
+	.btn-success:hover {
+		background-color: #00b238;
+	}
+
+	.btn-info:hover {
+		background-color: #0092Ca;
+	}
+
 	.description {
 		text-align: left;
 		margin: 5px;

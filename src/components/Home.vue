@@ -53,6 +53,10 @@ export default {
 </script>
 
 <style scoped>
+
+  .container {
+    font-family: 'Lato', sans-serif
+  }
   
   .appear-enter-active {
     animation: appear-in 0.7s ease-in forwards;

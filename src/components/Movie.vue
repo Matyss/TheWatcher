@@ -40,11 +40,6 @@ export default {
         }
     } 
 
-    img {
-        border-top-right-radius: 3px;
-        border-top-left-radius: 3px;
-    }
-
     .thumbnail:hover {
         transform: scale(1.1);
         box-shadow: 7px 10px 82px -5px rgba(0,0,0,0.75);
@@ -53,6 +48,7 @@ export default {
 
     .thumbnail {
         border: none;
+        border-radius: 0px;
         padding: 0;
         transition: all 0.5s ease-in-out;
         cursor: pointer;

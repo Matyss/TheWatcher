@@ -115,6 +115,36 @@ export default {
 
 <style scoped>
 
+	.form-control {
+		border-radius: 0px;
+	}
+
+	.btn-success {
+		background-color: #02d143;
+		border: none;
+		border-radius: 0px;
+		padding: 8px 16px;
+	}
+
+	.btn-success:hover {
+		background-color: #00b238;
+	}
+
+	.btn-warning {
+		background-color: #ffa000;
+		border: none;
+		border-radius: 0px;
+		padding: 8px 16px;
+	}
+
+	.btn-warning:hover {
+		background-color: #dd8c02;
+	}
+
+	.container {
+		font-family: 'Lato', sans-serif
+	}
+
 	.appear-enter-active {
 		animation: appear-in 0.7s ease-in forwards;
 	}

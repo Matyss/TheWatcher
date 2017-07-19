@@ -28,6 +28,18 @@ ul {
 	font-size: 0.8em;
 }
 
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	font-family: 'Pacifico', cursive;
+}
+
+.navbar-nav {
+	font-family: 'Lato', sans-serif
+}
+
 .navbar-default {
 background-color: #1c313a;
 border-color: #718792;

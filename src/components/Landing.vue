@@ -47,7 +47,7 @@
 }
 
 .my-btn:hover {
-	background-color: #0092Ca;
+	background-color: #00b238;
 }
 
 button:focus {

@@ -1,6 +1,6 @@
 <template>
 	<div class="footer">
-		<p class="text-muted">&copy; TheWatcher &nbsp | &nbsp Made by Matyss with <i class='fa fa-heart'></i></p>
+		<p>&copy; TheWatcher &nbsp | &nbsp Made by Matyss with <i class='fa fa-heart'></i></p>
 	</div>
 </template>
 
@@ -8,16 +8,23 @@
 
 	.footer {
 		position: relative;
-		margin-top: 50px;
+		margin-top: 80px;
 		width: 100%;
 		height: 50px;
 		background-color: #1c313a;
-		bottom: 0;
-		font-family: 'Lato', sans-serif
+		font-family: 'Lato', sans-serif;
+		font-weight: 300 !important;
+		color: white;
+		text-align: center;
+		color: #636c72;
 	}
-	.text-muted {
-		padding-top: 15px;
-		margin-left: 20px;
+
+	i {
+		font-size: 0.8em;
+	}
+
+	p {
+		padding-top: 5px;
 	}
 
 </style>

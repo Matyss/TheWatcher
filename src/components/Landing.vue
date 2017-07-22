@@ -44,6 +44,8 @@
 	border: none;
 	text-transform: uppercase;
 	padding: 15px 25px;
+	font-weight: 300;
+	cursor: pointer;
 }
 
 .my-btn:hover {
@@ -59,6 +61,7 @@ button:focus {
 	position: relative;
 	text-align: center;
 	padding-top: 40vh;
+	font-family: 'Lato', sans-serif;
 }
 
 #landing-header h1 {

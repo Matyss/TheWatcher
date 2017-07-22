@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div class='row'>
-	      	<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+	      	<div class="col-lg-12">
 				<transition name='appear' mode='out-in'>
 					<component 
 		      		:is='displayedMessage' 
@@ -74,7 +74,7 @@ export default {
 				setTimeout(() => {
 					this.displayedMessage = '';
 					this.movie.title = '';
-				}, 3000);
+				}, 5000);
 			} else {
 				this.displayedMessage ='app-message-fail';
 			}
@@ -115,15 +115,60 @@ export default {
 
 <style scoped>
 
+	@media(max-width: 992px) {
+		.container {
+			width: 60% !important;
+		}
+	}
+
+	@media(max-width: 576px) {
+		.container {
+			width: 90% !important;
+		}
+	}
+
+	.container {
+		font-family: 'Lato', sans-serif;
+		width: 40%;
+	}
+
+	h2 {
+		font-weight: 300;
+	}
+
+	label {
+		font-weight: 400;
+	}
+
 	.form-control {
 		border-radius: 0px;
 	}
 
-	.btn-success {
-		background-color: #02d143;
+	::-webkit-input-placeholder {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+
+	::-moz-placeholder {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+
+	:-ms-input-placeholder {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+
+	.btn {
 		border: none;
 		border-radius: 0px;
 		padding: 8px 16px;
+		cursor: pointer;
+		font-weight: 300;
+	}
+
+	.btn-success {
+		background-color: #02d143;
 	}
 
 	.btn-success:hover {
@@ -132,17 +177,18 @@ export default {
 
 	.btn-warning {
 		background-color: #ffa000;
-		border: none;
-		border-radius: 0px;
-		padding: 8px 16px;
 	}
 
 	.btn-warning:hover {
 		background-color: #dd8c02;
 	}
 
-	.container {
-		font-family: 'Lato', sans-serif
+	textarea {
+		resize: none;
+	}
+
+	.row {
+		margin-bottom: 30px;
 	}
 
 	.appear-enter-active {
@@ -173,13 +219,5 @@ export default {
 		}
 	}
 
-
-	textarea {
-		resize: none;
-	}
-
-	.row {
-		margin-bottom: 30px;
-	}
 
 </style>

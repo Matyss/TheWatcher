@@ -16,6 +16,11 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 
 export default {
+	data() {
+		return {
+			showModal: false
+		}
+	},
 	components: {
 		appNavbar: Navbar,
 		appHeader: Header,

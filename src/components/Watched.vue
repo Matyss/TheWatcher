@@ -1,7 +1,7 @@
 <template>
   <div class="container">
   	<div class='row'>
-    	<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+    	<div class="col-lg-12">
     		<transition name='appear' mode='out-in'>
           	<component 
               :is='displayedMessage'>
@@ -19,7 +19,7 @@
     						<i class="fa fa-repeat"></i>
     					</span>
     				 {{ el.title }} ({{ el.year }})
-    				 <img :src="el.img">
+    				 <img :src="el.img" alt='small_movie_poster'>
     				</li>
     			</template>
     		</ul>
@@ -71,14 +71,37 @@ export default {
 
 <style scoped>
 
+@media(max-width: 992px) {
+    .container {
+      width: 60% !important;
+    }
+  }
+
 @media(max-width: 768px) {
   li:hover img{
-    transform: scale(2.0) !important;
+    transform: scale(3.0) !important;
+  }
+  .container {
+    width: 70% !important;
   }
 }
 
+@media(max-width: 576px) {
+    .container {
+      width: 90% !important;
+    }
+    li:hover img{
+    transform: scale(2.0) !important;
+  }
+  }
+
 .container {
-  font-family: 'Lato', sans-serif
+  font-family: 'Lato', sans-serif;
+  width: 50%;
+}
+
+h2 {
+  font-weight: 300;
 }
 
 img {
@@ -110,6 +133,7 @@ li {
 	height: 40px;
 	color: #423f3f;
 	line-height: 40px;
+  font-weight: 300;
 }
 
 li:nth-child(2n) {

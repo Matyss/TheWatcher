@@ -57,19 +57,20 @@ export default {
 <style scoped>
 
 
-
-	.btn-success {
-		background-color: #02d143;
+	.btn {
 		border: none;
 		border-radius: 0px;
 		padding: 8px 16px;
+		cursor: pointer;
+		font-weight: 300;
+	}
+
+	.btn-success {
+		background-color: #02d143;
 	}
 
 	.btn-info {
 		background-color: #03a9f4;
-		border: none;
-		border-radius: 0px;
-		padding: 8px 16px;
 	}
 
 	.btn-success:hover {
@@ -88,6 +89,7 @@ export default {
 
 	h3 { 
 		font-size: 1.5em;
+		font-weight: 300;
 	}
 
 	.year {

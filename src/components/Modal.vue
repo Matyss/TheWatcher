@@ -8,11 +8,15 @@
           </div>
 
           <div class="modal-body">
-
+            <star-rating 
+            :show-rating='false' 
+            :increment='0.5' 
+            @rating-selected='setRating'></star-rating>
+            <div>{{ ratingInfo }}</div>
           </div>
 
           <div class="modal-footer">
-              <button class="btn btn-modal" @click="$emit('close')">
+              <button class="btn btn-modal" @click="updateRating">
                 OK
               </button>
           </div>
@@ -20,6 +24,42 @@
       </div>
     </div>
 </template>
+
+<script>
+
+import StarRating from '../../node_modules/vue-star-rating';
+
+import db from '../db';
+
+  export default {
+    data() {
+      return {
+        rating: null,
+        ratingInfo: `No rating selected`
+      }
+    },
+    props: ['currentMovie'],
+    components: {
+      StarRating
+    },
+    firesbase: {
+      movies: db.ref('movies')
+    },
+    methods: {
+      setRating(rating) {
+        this.ratingInfo = `You have rated this movie: ${rating} stars`;
+        this.rating = Number.parseFloat(rating);
+      },
+      updateRating() {
+        db.ref('movies').child(this.currentMovie['.key']).update({
+        userRating: this.rating
+        });
+        this.$emit('close');
+      },
+
+    }
+  }
+</script>
 
 <style scoped>
   
@@ -33,6 +73,10 @@
   background-color: rgba(0, 0, 0, .5);
   display: table;
   transition: opacity .3s ease;
+  }
+
+  .modal-body {
+    text-align: center;
   }
 
   .modal-wrapper {

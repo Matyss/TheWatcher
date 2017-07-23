@@ -13,12 +13,14 @@
 
 <script>
 
+import { eventBus } from '../main';
 import db from '../db';
 
 export default {
 	data() {
 		return {
-			color: ''
+			color: '',
+			movieObj: null
 		}
 	},
 	firesbase: {
@@ -27,11 +29,12 @@ export default {
 	props: ['movie'],
 	methods: {
 		setWatched(movie) {
-			
+			this.movieObj = movie;
+			eventBus.$emit('movieEmited', this.movie);
 			db.ref('movies').child(movie['.key']).update({
-				watched: true
-			}); 
-			this.$emit('movieWatched')
+			watched: true
+			});
+			this.$emit('movieWatched');
 		}
 	},
 	computed: {

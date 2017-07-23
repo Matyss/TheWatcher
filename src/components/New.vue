@@ -44,10 +44,11 @@ export default {
 				img: '',
 				year: '',
 				description: '',
-				rating: 0,
+				rating: null,
 				date: '',
 				id: '',
 				watched: false,
+				userRating: null,
 				selected: false
 			},
 			displayedMessage: ''

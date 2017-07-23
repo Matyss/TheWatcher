@@ -1,8 +1,8 @@
 <template>
   <div class='container'>
-    <transition name='modal'>
-    <app-modal v-if='showModal' @close='showModal = false'></app-modal>
-    </transition>
+      <transition name='modal'>
+        <app-modal :currentMovie='currentMovie' v-if='showModal' @close='showModal = false'></app-modal>
+      </transition>
       <div class='row'>
         <div class="col-md-6 col-sm-6">
       		<h2>Our most recent movies to see:</h2>
@@ -24,9 +24,10 @@
 
 import Movie from './Movie.vue';
 import MessageInfo from './alerts/MessageInfo.vue';
-import db from '../db';
 import Modal from './Modal.vue';
+import db from '../db';
 
+import { eventBus } from '../main';
 
 export default {
 	
@@ -34,7 +35,8 @@ export default {
     data() {
     	return {
         showInfo: false,
-        showModal: false
+        showModal: false,
+        currentMovie: null
     	}
     },
     firebase: {
@@ -47,12 +49,17 @@ export default {
     },
     methods: {
         displayInfo() {
-          this.showModal = true;
           this.showInfo = true;
           setTimeout(() => {
             this.showInfo = false;
           }, 5000);
         }   
+    },
+    created() {
+      eventBus.$on('movieEmited', (obj) => {
+        this.currentMovie = obj;
+        this.showModal = true;
+      })
     }
 }
 

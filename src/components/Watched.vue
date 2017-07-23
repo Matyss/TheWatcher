@@ -18,7 +18,7 @@
     					<span @click='restoreMovie(el)' class='button button--restore'>
     						<i class="fa fa-repeat"></i>
     					</span>
-    				 {{ el.title }} ({{ el.year }})
+    				 {{ el.title }} ({{ el.year }}) | You rated: {{ el.userRating }}
     				 <img :src="el.img" alt='small_movie_poster'>
     				</li>
     			</template>

@@ -11,7 +11,6 @@ Vue.use(VueFire);
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-
 Vue.config.productionTip = false;
 
 const router = new VueRouter({
@@ -24,8 +23,12 @@ const router = new VueRouter({
 	}
 });
 
+export const eventBus = new Vue();
+
 new Vue({
   el: '#app',
   router,
   render: h => h(App)
 })
+
+

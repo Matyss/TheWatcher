@@ -62,6 +62,15 @@ import db from '../db';
 </script>
 
 <style scoped>
+
+@media(max-width: 576px) {
+  .modal-container {
+    width: 300px !important;
+  }
+  .star-rating {
+    margin: 0 5% !important;
+  }
+}
   
   .modal-mask {
   position: fixed;
@@ -90,6 +99,10 @@ import db from '../db';
   background-color: #fff;
   text-align: center;
 
+  }
+
+  .star-rating {
+    margin: 0 20%;
   }
 
   .modal-header {

@@ -90,9 +90,12 @@ export default {
     .container {
       width: 90% !important;
     }
-    li:hover img{
-    transform: scale(2.0) !important;
-  }
+    img{
+    display: none;
+    }
+    li {
+      height: 80px !important;
+    }
   }
 
 .container {

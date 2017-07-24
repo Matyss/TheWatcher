@@ -1,0 +1,10 @@
+{
+	"name": "the_watcher",
+	"version": "1.0.0",
+	"description": "Awesome app to list movies",
+	"author": "Matyss",
+	"private": true,
+	"scripts": {
+		"postinstall": "npm install express"
+	}
+}

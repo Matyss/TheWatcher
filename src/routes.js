@@ -1,6 +1,6 @@
-import Header from './components/Header.vue';
-import Navbar from './components/Navbar.vue';
-import Footer from './components/Footer.vue'
+import Header from './components/shared/Header.vue';
+import Navbar from './components/shared/Navbar.vue';
+import Footer from './components/shared/Footer.vue';
 import Home from './components/Home.vue';
 import Landing from './components/Landing.vue';
 

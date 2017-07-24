@@ -1,7 +1,7 @@
 <template>
 	<div class='jumbotron'>
 		<div class="container">
-			<img class='logo img-responsive' src="../assets/logo.png" alt='the_watcher_telescope_logo'>
+			<img class='logo img-responsive' src="../../assets/logo.png" alt='the_watcher_telescope_logo'>
 			<h1 class='display-3'>Welcome to TheWatcher</h1>
 			<h2>View the best hand-picked movies to watch</h2>
 			<router-link to='/new' tag='span' ><a class='btn btn-info'>Add Movie</a></router-link>

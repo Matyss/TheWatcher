@@ -100,12 +100,12 @@ export default {
 			} else {
 				this.displayedMessage ='app-message-fail';
 			}
-      },
+      	},
 		checkNum(inputMax, inputVal) {
 	      	if(inputVal > inputMax) {
 	      		this.movie.year = inputMax;
 	      	}
-      	},
+	  	},
     },
 	components: {
 		appMessageSuccess: MessageSuccess,

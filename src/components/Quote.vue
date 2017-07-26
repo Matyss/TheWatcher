@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-    <h2>Recall your favorite quote</h2>
+    <h2>Recall your favorite quotes</h2>
     <hr>
     <div class="quote-box" key='box'>
       <div class="quote-head" key='head'>Movie Quote</div>

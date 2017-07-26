@@ -8,7 +8,7 @@
 		      		:title='movie.title'>
 		      		</component>
 				</transition>
-				<h2>Add new movie to list</h2>
+				<h2>Add new movie to your wishlist</h2>
 				<hr>
 		        <div class="form-group">
 		          <label>Title</label>

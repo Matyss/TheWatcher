@@ -110,6 +110,9 @@ import db from '../db';
     color: #fff;
     background-color: #718792;
     padding: 15px 0;
+  }
+
+  h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
   }
@@ -117,7 +120,7 @@ import db from '../db';
   .btn {
     border: none;
     border-radius: 0px;
-    padding: 8px 16px;
+    padding: 10px 20px;
     cursor: pointer;
     font-weight: 300;
     color: #fff;
@@ -133,10 +136,6 @@ import db from '../db';
 
   .modal-body {
     margin: 20px 0;
-  }
-
-  .modal-default-button {
-    float: right;
   }
 
  h3 {

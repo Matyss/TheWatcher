@@ -30,6 +30,14 @@
 					<a class="nav-link">Watched</a>
 				</router-link>
 
+				<router-link 
+				tag='li' 
+				to='/quote' 
+				class='nav-item' 
+				data-toggle='tab'>
+					<a class="nav-link">Quotes</a>
+				</router-link>
+
 			</ul>
 		</div>
 	</nav>

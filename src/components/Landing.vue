@@ -6,7 +6,7 @@
 				to='/movies' 
 				tag='button' 
 				class='btn btn-success btn-lg my-btn'>
-				<a class='my-anchor'>View all movies</a></router-link>
+				<a class='my-anchor'>Create wishlist</a></router-link>
 		</div>
 		<ul class="slideshow">
 			<li></li>
@@ -22,7 +22,12 @@
 
 <style scoped>
 
- body {
+ h1 {
+ 	font-family: 'Pacifico', sans-serif;
+ 	font-weight: 400;
+ }
+
+ ul {
  	background-color: #000;
  }
 
@@ -38,12 +43,14 @@
 
 .my-btn {
 	background-color: #02d143;
+	font-family: 'Lato', sans-serif;
 	border: none;
 	border-radius: 0px;
 	padding: 8px 16px;
 	border: none;
 	text-transform: uppercase;
 	padding: 15px 25px;
+	margin-top: 20px;
 	font-weight: 300;
 	cursor: pointer;
 }
@@ -61,7 +68,6 @@ button:focus {
 	position: relative;
 	text-align: center;
 	padding-top: 40vh;
-	font-family: 'Lato', sans-serif;
 }
 
 #landing-header h1 {
@@ -93,7 +99,7 @@ button:focus {
 	background-position: 50% 50%;
 	opacity: 0;
 	z-index: 0;
-	animation: imgAnim 50s linear infinite; 
+	animation: imgAnim 30s linear infinite; 
 }
 
 .slideshow li:nth-child(1) { 
@@ -101,19 +107,19 @@ button:focus {
 }
 .slideshow li:nth-child(2) { 
   background-image: url('../assets/pulpFiction.jpg');
-  animation-delay: 10s; 
+  animation-delay: 6s; 
 }
 .slideshow li:nth-child(3) { 
   background-image: url('../assets/joker.jpg');
-  animation-delay: 20s; 
+  animation-delay: 12s; 
 }
 .slideshow li:nth-child(4) { 
   background-image: url('../assets/rogueOne.jpg');
-  animation-delay: 30s; 
+  animation-delay: 18s; 
 }
 .slideshow li:nth-child(5) { 
   background-image: url('../assets/francis.jpg');
-  animation-delay: 40s; 
+  animation-delay: 24s; 
 }
 
 @keyframes imgAnim { 

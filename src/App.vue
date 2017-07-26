@@ -38,8 +38,8 @@ export default {
 	transform: translateX(0);
 }
 .slide-enter-active {
-	animation: slide-in 0.7s ease-in-out forwards;
-	transition:  opacity 0.7s ease-in-out;
+	animation: slide-in 0.7s ease forwards;
+	transition:  opacity 0.7s ease;
 }
 
 .slide-leave {
@@ -48,9 +48,9 @@ export default {
 }
 
 .slide-leave-active {
-	transition:  opacity 0.7s ease-in-out;
+	transition:  opacity 0.7s cubic-bezier(1.0, 0.5, 0.8, 1.0);;
   	opacity: 0;
-  	animation: slide-out 0.7s ease-in-out forwards;
+  	animation: slide-out 0.7s cubic-bezier(1.0, 0.5, 0.8, 1.0);;
 }
 
 @keyframes slide-in {

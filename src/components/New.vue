@@ -22,8 +22,8 @@
 		          <label>Description</label>
 		          <textarea class="form-control" type='text' maxlength="120" rows='4' v-model='movie.description'></textarea> 
 		        </div>
-		        <button class="btn btn-success" @click='addMovie'>Submit</button>
-		        <button class="btn btn-warning" @click='fetchData'>Search</button>
+		        <button :disabled='!movie.year' class="btn btn-success" @click='addMovie'>Submit</button>
+		        <button  class="btn btn-warning" @click='fetchData'>Search</button>
 	        </div>
 		</div>
 	</div>
@@ -163,7 +163,7 @@ export default {
 	.btn {
 		border: none;
 		border-radius: 0px;
-		padding: 8px 16px;
+		padding: 10px 20px;
 		cursor: pointer;
 		font-weight: 300;
 	}

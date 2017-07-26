@@ -17,6 +17,11 @@ const Watched = resolve => {
 	}, 'watched');
 }
 
+const Quote = resolve => {
+	require.ensure(['./components/Quote.vue'], () => {
+		resolve(require('./components/Quote.vue'));
+	}, 'quote');
+}
 
 export const routes = [
 	{path: '/', components: {
@@ -37,6 +42,13 @@ export const routes = [
 	}},
 	{path: '/watched', components: {
 		default: Watched,
+		'navbar': Navbar,
+		'header': Header,
+		'footer': Footer
+
+	}},
+	{path: '/quote', components: {
+		default: Quote,
 		'navbar': Navbar,
 		'header': Header,
 		'footer': Footer

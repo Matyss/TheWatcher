@@ -9,15 +9,8 @@ TheWatcher is a web app that will help you to manage your movies "wish list". Fr
   - your own rating,
   - list of movies that you watched,
   - alert messages,
-  - landing page
-
-#UPDATE
-
-Just recently I've added a new cool feature:
-
-  - famous movie quotes page with random generator
-  
-This feature uses external API to generate famous movie quotes!
+  - landing page,
+  - famous quotes page,
 
 The app was designed and coded by myself as an excersice in using front-end framework Vue.js
 TheWatcher's backend is built on FireBase database which stores information about added movies. It also uses libraries like 

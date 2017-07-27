@@ -106,7 +106,7 @@ button:focus {
   background-image: url('../assets/leo.jpg');
 }
 .slideshow li:nth-child(2) { 
-  background-image: url('../assets/pulpFiction.jpg');
+  background-image: url('../assets/django.jpg');
   animation-delay: 6s; 
 }
 .slideshow li:nth-child(3) { 

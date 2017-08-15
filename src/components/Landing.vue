@@ -2,9 +2,9 @@
 	<div>
 		<div id='landing-header'>
 			<h1>Welcome to TheWatcher!</h1>
-			<router-link 
-				to='/movies' 
-				tag='button' 
+			<router-link
+				to='/movies'
+				tag='span'
 				class='btn btn-success btn-lg my-btn'>
 				<a class='my-anchor'>Create wishlist</a></router-link>
 		</div>
@@ -99,32 +99,32 @@ button:focus {
 	background-position: 50% 50%;
 	opacity: 0;
 	z-index: 0;
-	animation: imgAnim 30s linear infinite; 
+	animation: imgAnim 30s linear infinite;
 }
 
-.slideshow li:nth-child(1) { 
+.slideshow li:nth-child(1) {
   background-image: url('../assets/leo.jpg');
 }
-.slideshow li:nth-child(2) { 
+.slideshow li:nth-child(2) {
   background-image: url('../assets/django.jpg');
-  animation-delay: 6s; 
+  animation-delay: 6s;
 }
-.slideshow li:nth-child(3) { 
+.slideshow li:nth-child(3) {
   background-image: url('../assets/joker.jpg');
-  animation-delay: 12s; 
+  animation-delay: 12s;
 }
-.slideshow li:nth-child(4) { 
+.slideshow li:nth-child(4) {
   background-image: url('../assets/rogueOne.jpg');
-  animation-delay: 18s; 
+  animation-delay: 18s;
 }
-.slideshow li:nth-child(5) { 
+.slideshow li:nth-child(5) {
   background-image: url('../assets/francis.jpg');
-  animation-delay: 24s; 
+  animation-delay: 24s;
 }
 
-@keyframes imgAnim { 
-  0% { 
-    opacity: 0; 
+@keyframes imgAnim {
+  0% {
+    opacity: 0;
     animation-timing-function: ease-in;
   }
   10% {
@@ -143,5 +143,5 @@ button:focus {
     opacity: 1;
 }
 
-	
+
 </style>
